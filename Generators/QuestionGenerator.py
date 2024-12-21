@@ -24,8 +24,8 @@ def generate_random_number(minimum, maximum):
     return random.randint(minimum, maximum)
 
 #to generate random values for a b c d
-minvalue = 1
-maxvalue = 100
+minvalue = 293
+maxvalue = 1000
 a = generate_random_number(minvalue, maxvalue)
 b = generate_random_number(minvalue, maxvalue)
 c = generate_random_number(minvalue, maxvalue)
@@ -41,7 +41,8 @@ def perform_random_operations(a, b, c, d):
     d_operation = random.choice(operations)
 
     # Display the operations as a mathematical expression
-    expression = f"{a} {a_operation} {b} {b_operation} {c} {c_operation} {d}"
+    #expression = f"{a} {a_operation} {b} {b_operation} {c} {c_operation} {d}"
+    expression = f"{a} {a_operation} {b} "
     print(f"Performing operations: {expression}")
     
     result = eval(expression)  # Use eval() to compute the result from the expression
@@ -50,7 +51,7 @@ def perform_random_operations(a, b, c, d):
 
 
 result = perform_random_operations(a, b, c, d)
-print(result)
+#print(result)
 
 #to ask user the question
 while True:
